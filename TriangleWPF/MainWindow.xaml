@@ -1,0 +1,39 @@
+﻿<Window x:Class="TriangleWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TriangleWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="668" Width="851">
+    <Grid Margin="0,0,0,-139">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="353*"/>
+            <RowDefinition Height="416*"/>
+        </Grid.RowDefinitions>
+
+        <ListBox Margin="10,30,10,129" x:Name="listBoxMasBus" FontSize="16"/>
+        <Label x:Name="lbnEquilateralTriangle" Content="Кол-во равносторонних треугольников:" Margin="423,295,19,23" FontSize="16" />
+        <Label x:Name="lbnIsoscelesTriangle" Content="Кол-во равнобедренных треугольников:" Margin="423,238,36,77" FontSize="16" />
+        <Label x:Name="lbnRightTriangle" Content="Кол-во прямоугольных треугольников:" Margin="22,295,437,23" FontSize="16" />
+        <Label x:Name="lbnArbitraryTriangle" Content="Кол-во произвольных треугольников:" Margin="22,238,451,77" FontSize="16" />
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="10,10,564,326">
+            <Label Margin="5,23,5,26" Content="Сторона А" FontSize="14"/>
+            <TextBox x:Name="txtStoronaA" Width="120" Margin="5,23,5,26" FontSize="16"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="292,10,282,326">
+            <Label Margin="5,23,5,26" Content="Сторона B" FontSize="14"/>
+            <TextBox x:Name="txtStoronaB" Width="120" Margin="5,23,5,26" FontSize="16"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="564,10,10,326">
+            <Label Margin="5,23,5,26" Content="Сторона C" FontSize="14"/>
+            <TextBox x:Name="txtStoronaC" Width="120" Margin="5,23,5,26" FontSize="16"/>
+        </StackPanel>
+
+        <Button x:Name="btnEnter" Margin="292,117,282,254"  FontSize="16" Content="Ввод данных" Click="btnEnter_Click" Grid.Row="1"/>
+
+    </Grid>
+</Window>
